@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&family=Caveat+Brush&family=DM+Serif+Display&family=Kite+One&family=Noto+Sans:wght@400;500&display=swap");
+@import url("https://fonts.cdnfonts.com/css/sedan-sc");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Sedan-SC";
+  src: url("./assets/fonts/SedanSC-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica-Neue";
+  src: url("./assets/fonts/helvetica-neue-master/HelveticaNeue-Regular.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica-Neue";
+  src: url("./assets/fonts/helvetica-neue-master/HelveticaNeue-Medium.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica-Neue";
+  src: url("./assets/fonts/helvetica-neue-master/HelveticaNeue-Bold.otf")
+    format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica-Neue";
+  src: url("./assets/fonts/helvetica-neue-master/HelveticaNeue-Light.otf")
+    format("opentype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@keyframes customBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-30px);
+  }
+}
+
+.custom-bounce {
+  animation: customBounce 4s infinite ease-in-out;
+}
